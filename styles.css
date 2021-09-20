@@ -1,1 +1,102 @@
 /*Maak hier jouw CSS!*/
+
+.container{
+    background-color: #FFBF69;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px minmax(50px) 50px ;
+    grid-template-areas:
+    "grid-a"
+    "grid-b"
+    "grid-c"
+    "grid-d"
+    "grid-e"
+    "grid-f";
+}
+
+.grid-item {
+    background-color: #ff9f1c;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-a{
+    grid-area: grid-a;
+}
+
+.grid-b{
+    grid-area: grid-b;
+}
+
+.grid-c{
+    grid-area: grid-c;
+}
+
+.grid-d{
+    grid-area: grid-d;
+}
+
+.grid-e{
+    grid-area: grid-e;
+}
+
+.grid-f{
+    grid-area:grid-f;
+}
+
+@media screen and (min-width: 576px){
+
+    .container {
+        background-color: #FFBF69;
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-areas:
+            "grid-a grid-a grid-a"
+            "grid-b grid-c grid-c"
+            "grid-b grid-e grid-d"
+            "grid-b grid-e grid-auto"
+            "grid-f grid-f grid-f";
+
+    }
+
+
+    .grid-item {
+        background-color: #ff9f1c;
+        padding: 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-a{
+        grid-area: grid-a;
+    }
+
+    .grid-b{
+        grid-area: grid-b;
+    }
+
+    .grid-c{
+        grid-area: grid-c;
+    }
+
+    .grid-d{
+        grid-area: grid-d;
+    }
+
+    .grid-e{
+        grid-area: grid-e;
+    }
+
+    .grid-f{
+        grid-area:grid-f;
+    }
+
+}
